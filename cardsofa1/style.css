@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #D9CDF7;
+    --text-color: #271A45;
+}
+
+body{
+    background-color: var(--bg-color);
+    height: 100vh;
+   /* border: 5px solid green; */
+
+    display: grid;
+    place-content: center;
+}
+
+body *{
+    /* Lato  é uma fonte | Light */
+    /* Crimson Pro é uma fonte | SemiBold = Sofá */
+    color: var(--text-color);
+    font-family: 'Crimson Pro', serif;
+    font-family: 'Lato', sans-serif;
+}
+
+#btnclose,
+#animated {
+    display: none;
+}
+
+#app{
+    display: flex;
+    align-items: center;
+    gap: 63px;
+
+   /* border: 1px solid red; */
+}
+#product-image{
+    position: relative;
+}
+
+#product-image button{
+    position: absolute;
+    right: 0;
+
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+#product-image > img{
+    width: 449px;
+    height: 222px;
+}
+
+html.animated button#btn360, 
+html.animated img#static {
+    display: none;
+}
+
+html.animated button#btnclose,
+html.animated img#animated{
+    display: initial;
+}
+
+h1{
+    font-family: Crimsn Pro, serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin-top: 12px;
+}
+
+h4{
+    font-size: 10px;
+    font-weight: 300;
+
+}
+
+p{
+    margin-top:  12px;
+    opacity: 0.67;
+}
+
+#product-details button{
+    font-size: 12px;
+    line-height: 16px;
+
+    padding: 8px 16px;
+    border: 0.5px solid var(--text-color);
+    border-radius: 999px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #app{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+ }

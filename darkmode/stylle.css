@@ -1,0 +1,45 @@
+:root{
+    --body-bg: #fafafa;
+    --body-color: #555;
+    --link-color: #222;
+    --link-color-hover: #ec5840;
+}
+
+
+body{
+    width: 50%;
+    background-color: var(--body-bg);
+    color: var(--body-color);
+}
+
+
+a {
+    color: var(--link-color);
+}
+
+a:hover{
+    color: var(--link-color-hover);
+}
+
+/* 1°. modelo 
+body.dark-mode{
+    background-color: #212529;
+    color: #fafafa;
+}
+
+.dark-mode a{
+    color: #dee2e6;
+}
+
+.dark-mode a:hover{
+    color: #3cc368;
+} */
+
+/*2°. modelo */
+
+.dark-mode:root{
+    --body-bg: #212529;
+    --body-color: #fafafa;
+    --link-color: #dee2e6;
+    --link-color-hover: #3cc368;
+}

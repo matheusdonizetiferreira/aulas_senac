@@ -1,0 +1,98 @@
+/* reset */
+*{
+    margin:0;
+    padding:0; 
+}
+
+main{
+
+    width: 500px;
+    height: 300px;
+
+ /*  background-image: url("./assets/arvore.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-color: #c5ee5e; */
+
+    background: url("./assets/arvore.png") no-repeat bottom right rgb(97, 187, 97);
+
+    /* padding:125px 25px; /* top, bottom - left, riht */
+    /* padding, margin, border => top, right, bottom, left */
+  /* padding: 125px 25px 50px 40px; /* top, right, bottom, left */
+    /* padding: 25px;*/
+     margin-left: 35px;
+     margin-top: 50px;
+     
+     border: 1px solid rgb(28, 155, 39);
+     border-radius: 25px; /* arredondar cantos da borda */
+     border-bottom-right-radius: 50px;
+
+     box-shadow: 15px 15px 35px rgb(190, 48, 48);
+     /*
+     1º sombra a direita
+     2º sombra em baixo 
+     3º é o borrão da sombra/ofuscamento/esmaecer 
+     */
+
+      transform: rotate(30deg);
+     
+     /* moz, ms, webikit */
+     /* procurar sobre transition */
+     /* -webkit-transform: rotate(30deg); */
+
+     /* transition */
+     /* animation */
+
+    }
+
+h1{
+  padding-left: 16px;
+  padding-top: 16px;
+  margin-bottom: 22px;
+  font-size: 25px;
+  text-align: center;
+  color: firebrick;
+  font-family: verdana;
+  font-variant: small-caps;
+  letter-spacing: 0.4em;
+ /* fontes fluidas */
+/* em - multiplicado pelo pai */
+/*rem - multiplicado pelo root 16px */
+}
+
+p{
+    padding-left: 22px;
+    padding-right: 16px;
+    margin-bottom: 16px;
+    color: rgb(238, 23, 23);
+    word-spacing: 0.2rem; /* espaçamento entre palavras */
+    text-indent: 22px;    
+}
+
+.destacado{
+    text-decoration: underline;
+    color: rgb(121, 4, 28);
+    font-family:  Tahoma;
+}
+.destacado:hover{
+    text-transform: uppercase;
+    color: #033b07;
+    font-size: 1.1rem;
+}
+/*
+:hover
+:link
+:visited
+:active
+*/
+
+ul{
+    padding-left: 56px;
+    list-style-type: circle;
+}
+
+ul li{
+    height: 22px;
+    color: rgb(1, 43, 1);
+    font-weight: bold;
+}

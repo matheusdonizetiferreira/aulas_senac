@@ -1,0 +1,17 @@
+/* rem é uma unidade de medida relativa */
+/* px é uma unidade de medida fixa */
+/* 16px é uma unidade de medida padrão do navegador */
+:root{
+    font-size: 62,5%;
+}
+
+body{
+    font-family: Verdana;
+
+}
+h1{
+    font-size: 3.2rem;
+}
+h2{
+    font-size: 2.8rem;
+}

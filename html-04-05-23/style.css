@@ -1,0 +1,91 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #DAC3B6;
+}
+form input:focus{
+ background-color: rgb(145, 215, 238);
+}
+button{
+    width: 100px;
+    border-radius: 6px;
+    background-color:#7FFFD4;
+    
+}
+button:hover{
+    transform: scale(1.1);
+    transition: all 0.4s;
+} 
+
+h1{
+    font-size: 50px;
+    color:aquamarine;
+    -webkit-text-stroke: 1px black;
+    /* -webkit-text-stroke-color: black; */
+}
+form input{
+    border: 3px solid aquamarine;
+    border-radius: 12px;
+    height: 25px;
+    border-color: rgba(15, 15, 15, 0.822);
+    padding: 10px 20px;
+    
+}
+.link{
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    display: flex;
+    text-decoration: none; 
+    color: rgb(105, 104, 104);
+    font-size: 1.2em;
+}
+.link:hover{
+    color: rgb(36, 206, 149);
+}
+header{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+nav{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#Botãodecalcular{
+    cursor: pointer;
+}
+
+span{
+    color: black;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 400px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 200px;
+    
+    
+} 
+
+h2{
+    text-align: center;
+}
+
+.imagemhome{
+    position: relative;
+    right: 180px;
+}

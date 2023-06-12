@@ -1,0 +1,38 @@
+/*
+sintaxe(maneira de  escrever) css é
+
+elemento {
+    propriedade: valor;
+}
+
+ . classe
+ # id
+*/
+h1{
+    color:rgb(129, 29, 29);
+}
+h2{
+    color: rgb(53, 53, 231);
+}
+p{ 
+    font-size: 18px; /* em ou rem */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* classe */
+.destaque{
+    color: rgb(41, 182, 41);
+    font-weight: bold;
+}
+p.destaque{
+    font-family: Tahoma;
+}
+#navegacao ul{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    }
+/* id */
+#navegacao ul>li{
+    color: grey;
+    list-style-type: none;
+}
