@@ -1,0 +1,19 @@
+<script>
+    /* setTimeout */
+    console.log("Antes do SetTimeout");
+
+    /* callback assincrono 
+    uma função, usando uma função dentro dela, isso é callback
+    vai executar o console.log após 2000ms */ 
+
+    setTimeout(function() {
+        console.log("Testando o setTimeout")
+    }, 5000)
+
+    /* setInterval
+    vai executar de 3000 em segundos */
+    setInterval(function(){
+        console.log("Testando o setInterval");
+    },  3000)
+
+</script>
