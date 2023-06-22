@@ -113,6 +113,10 @@ label {
     cursor: text;
 }
 
+#input-password{
+    width: 90%;
+}
+
 .input-field i {
     font-size: 18px;
     cursor: text;
