@@ -29,22 +29,40 @@ export default function ListGames(games) {
    height: 100%;
     background-size: cover;
     border-radius: 5px;
-   // border-width: 5px;
-   // border-style: solid;
-    //border-color:  #e914385c;
+    box-shadow: 0px 0px 10px pink;
+
+
+    border: 5px solid red;
+  animation: borderAnimation 3s infinite alternate;
+    @keyframes borderAnimation {
+  0% {
+    border-color: #740808;
+  }
+  25%{
+    border-color: #6e0c6e;
+  }
+  50% {
+    border-color: #019696;
+  }
+  100% {
+    border-color: green;
+  }
+}
+
 `;
 
     const Title = styled.div`
     color: #e6dbe6;
     font-family: 'Poppins', sans-serif;
     font-family: 'Raleway', sans-serif;
-   
- 
     `;
 
     const Price = styled.div`
     color: white;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+
  `;
 
     const Button = styled.div`
