@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 export default function ListGames(games) {
 
-    const ItemConteiner = styled.div`
+  const ItemConteiner = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -14,7 +14,6 @@ export default function ListGames(games) {
     gap: 10px;
     border-radius: 5px;
     position: relative;
-    background-color: #2b1f7a;
     color: #29303b;
     margin-bottom: 10px;
     margin-right: 10px;
@@ -23,17 +22,18 @@ export default function ListGames(games) {
 
 
 
-    const Thumbnaill = styled.img`
+  const Thumbnaill = styled.img`
    margin-top: 20px;
    width: 331px;
    height: 100%;
     background-size: cover;
     border-radius: 5px;
     box-shadow: 0px 0px 10px pink;
+    
 
 
-    border: 5px solid red;
-  animation: borderAnimation 3s infinite alternate;
+    border: 4px solid red;
+  animation: borderAnimation 2s infinite alternate;
     @keyframes borderAnimation {
   0% {
     border-color: #740808;
@@ -51,21 +51,21 @@ export default function ListGames(games) {
 
 `;
 
-    const Title = styled.div`
-    color: #e6dbe6;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Raleway', sans-serif;
+  const Title = styled.div`
+    color: #ffffff;
+  font-family: 'Handjet', cursive;
+  font-family: 'Poppins', sans-serif;
     `;
 
-    const Price = styled.div`
+  const Price = styled.div`
     color: white;
     text-align: center;
+    font-family: 'Handjet', cursive;
     font-family: 'Poppins', sans-serif;
-    font-family: 'Raleway', sans-serif;
 
  `;
 
-    const Button = styled.div`
+  const Button = styled.div`
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -75,6 +75,7 @@ export default function ListGames(games) {
   background-color: #1a1a1a;
   cursor: pointer;
   color: white;
+  border-color: #a5a4a4;
   transition: border-color 0.25s;
   
   &:hover {
@@ -82,22 +83,22 @@ export default function ListGames(games) {
   }
 `;
 
-    const ItemLink = styled.a`
+  const ItemLink = styled.a`
     text-decoration: none;
 
     `;
 
-    return (
-        <>
-            <ItemLink href={games.url} target="_blank">
-                <ItemConteiner>
-                    <Thumbnaill src={games.img} />
-                    <Title>{games.title}</Title>
-                    <Price>{games.price}</Price>
-                    <Button class="codepen-button">Comprar</Button>
+  return (
+    <>
+      <ItemLink href={games.url} target="_blank">
+        <ItemConteiner>
+          <Thumbnaill src={games.img} />
+          <Title>{games.title}</Title>
+          <Price>{games.price}</Price>
+          <Button class="codepen-button">Comprar</Button>
 
-                </ItemConteiner>
-            </ItemLink>
-        </>
-    )
+        </ItemConteiner>
+      </ItemLink>
+    </>
+  )
 }

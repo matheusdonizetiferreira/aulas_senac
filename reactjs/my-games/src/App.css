@@ -1,12 +1,12 @@
-
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
-body{
-  background-color: #2b1f7a;
-  
+body {
+  background-image: url(https://cultura.uol.com.br/upload/tvcultura/esporte/20220720150044_gettyimages-1334436084-1-1-.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

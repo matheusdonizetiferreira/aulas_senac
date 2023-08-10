@@ -13,8 +13,22 @@ const Container = styled.div`
       text-align: center;
       color: white;
       font-family: 'Oxanium', cursive;
-font-family: 'Rubik', sans-serif;
+      font-family: 'Rubik', sans-serif;
+      position: absolute;
+      z-index: 1;
+      width: 100%;
    
+  }
+
+  >div{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #00000061;
+      height: 100%;
+
+
   }
 `;
 
@@ -24,17 +38,19 @@ const ListContainer = styled.div`
   justify-content: center;
   padding: 25px;
   gap: 45px;
+  align-items: center;
+
 `;
 
 function App() {
       const [games, setGames] = useState([]);
 
-      const getData=async() =>{
+      const getData = async () => {
             let resp = await fetch("http://localhost:3000/data")
             let Data = await resp.json()
-            
+
             setGames(Data)
-      } 
+      }
 
 
       useEffect(() => {
@@ -44,7 +60,8 @@ function App() {
 
       return (
             <Container>
-                  <h1>Compre Aqui os Jogos do Momento</h1>
+                  <h1>Compre Aqui os Melhores Jogos do Momento</h1>
+                  <div></div>
                   <ListContainer>
                         {
                               games.map(game => {

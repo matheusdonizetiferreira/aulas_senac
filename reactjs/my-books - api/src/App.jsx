@@ -20,22 +20,43 @@ const ListContainer = styled.div`
 
 function App() {
   const[books, setBooks] = useState([]);
+  const[search, setSearch] = useState('');  // useState é um estado e o um estado e uma variável que armazena 
+  // alugma coisa e controla o estado
+
+  // var books
+  // setBooks(valores pra variavel books)
 
   useEffect( () => {
-    //  axios.get('http://localhost:3000/books')
-    
     const url = '/books';
-    api.get(url)
+
+    const params = {};
+    
+    if (search) {
+      params.title_like = search
+
+        api.get('/books?_embed=books', {params})
         .then( (response) => {
           // console.log(response.data)
           setBooks(response.data)
         })
-  },[])  
+
+    } else {
+        api.get(url) //all
+        .then( (response) => {
+          // console.log(response.data)
+          setBooks(response.data)
+        })
+    }
+    
+  },[search])  
+
 
 
   return (
     <Container>
         <h1>Minhas Lista de Livros</h1>
+        <input type="search" placeholder='Buscar Livros - Digite aqui' value={search} onChange={(ev) => setSearch(ev.target.value)}/>
+        
         <ListContainer>
           {
             books.map(book => {
