@@ -1,0 +1,9 @@
+.listaSearchInput{
+    display: flex;
+    height: 42px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    font-size: 16px;
+}

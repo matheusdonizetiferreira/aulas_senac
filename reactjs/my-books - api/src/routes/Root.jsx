@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import ListaBooks from '../pages/ListaBooks'
-import Cadastrar from '../pages/Cadastrar'
-import NotFound from '../pages/NotFound'
+import ListaBooks from '../pages/ListaBooks';
+import Cadastrar from '../pages/Cadastrar';
+import NotFound from '../pages/NotFound';
 
 const Root = () => {
     return (

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import ListBooks from '../../components/ListBooks';
 import api from '../../services/api';
+import styles from './styles.module.css';
+
 
 const Container = styled.div`
   max-width: 960px;
@@ -17,7 +19,8 @@ const ListContainer = styled.div`
   padding: 10px; 
 `;
 
-function ListaBooks ()
+
+function ListaBooks () {
   const[books, setBooks] = useState([]);
   const[search, setSearch] = useState('');  // useState é um estado e o um estado e uma variável que armazena 
   // alugma coisa e controla o estado
@@ -31,7 +34,7 @@ function ListaBooks ()
     const params = {};
     
     if (search) {
-      params.title_like = search
+      params.title_like = search;
 
         api.get('/books?_embed=books', {params})
         .then( (response) => {
@@ -55,7 +58,7 @@ function ListaBooks ()
         
         <Container>
         <h1>Minhas Lista de Livros</h1>
-        <input type="search" placeholder='Buscar Livros - Digite aqui' value={search} onChange={(ev) => setSearch(ev.target.value)}/>
+        <input className={styles.listaSearchInput} type="search" placeholder='Buscar Livros - Digite aqui' value={search} onChange={(ev) => setSearch(ev.target.value)}/>
         
         <ListContainer>
           {
@@ -74,5 +77,6 @@ function ListaBooks ()
         
     )
 
+}
 
-export default ListaBooks;
+export default ListaBooks;        
