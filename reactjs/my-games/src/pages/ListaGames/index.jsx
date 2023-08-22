@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import ListGames from '../../components/ListGames'; //se der erro eu sei q é nessa linha
 // import api from '../../services/api';
-//import styles from 'styles.module.css';
+import  'styles.module.css';
 
 
 const Container = styled.div`

@@ -4,21 +4,21 @@
       "id": 10,
       "title": "Programação Web com Nodejs",
       "image": "https://m.media-amazon.com/images/I/4110e7iseFL.jpg",
-      "price": 14.99,
+      "price": "R$14,99",
       "url": "https://www.luiztools.com.br/livro-node-amazon"
     },
     {
       "id": 20,
       "title": "Node.js e Microservices",
       "image": "https://m.media-amazon.com/images/I/41CUCsnLPML.jpg",
-      "price": 14.99,
+      "price": "R$14,99",
       "url": "https://www.luiztools.com.br/livro-node-ii-amazon"
     },
     {
       "id": 30,
       "title": "MongoDB para Iniciantes",
       "image": "https://m.media-amazon.com/images/I/31NR3RRS3VL.jpg",
-      "price": 11.99,
+      "price": "R$11,99",
       "url": "https://www.luiztools.com.br/livro-mongodb-amazon"
     },
     {
@@ -27,6 +27,27 @@
       "price": "R$23,90",
       "url": "https://www.amazon.com.br/Mil-Milh%C3%A3o-Sem-Cortar-Cafezinho/dp/8595083274/ref=asc_df_8595083274/?tag=googleshopp00-20&linkCode=df0&hvadid=379715842311&hvpos=&hvnetw=g&hvrand=83527129546391368&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001729&hvtargid=pla-743474651893&psc=1",
       "id": 32
+    },
+    {
+      "title": "127 Horas",
+      "image": "https://m.media-amazon.com/images/I/51szOcax3vL._SX348_BO1,204,203,200_.jpg",
+      "price": "R$19,90",
+      "url": "https://www.amazon.com.br/127-Horas-Aron-Ralston/dp/8598903256/ref=sr_1_1?adgrpid=128482795082&hvadid=595823450535&hvdev=c&hvlocphy=1001729&hvnetw=g&hvqmt=e&hvrand=14284682995115648109&hvtargid=kwd-364091409314&hydadcr=10517_13509131&keywords=livro+127+horas&qid=1692310843&sr=8-1",
+      "id": 33
+    },
+    {
+      "title": "A psicologia financeira: lições atemporais sobre fortuna, ganância e felicidade",
+      "image": "https://m.media-amazon.com/images/I/41htlT5B29S._SX335_BO1,204,203,200_.jpg",
+      "price": "R$31,90",
+      "url": "https://www.amazon.com.br/psicologia-financeira-atemporais-gan%C3%A2ncia-felicidade/dp/6555111100/ref=asc_df_6555111100/?tag=googleshopp00-20&linkCode=df0&hvadid=379726209097&hvpos=&hvnetw=g&hvrand=1887974326520889505&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001729&hvtargid=pla-1179885582409&psc=1",
+      "id": 34
+    },
+    {
+      "title": "Will",
+      "image": "https://m.media-amazon.com/images/I/51IXh4Qc1eL._SX342_BO1,204,203,200_.jpg",
+      "price": "R$35,99",
+      "url": "https://www.amazon.com.br/Will-Smith/dp/6557121863/ref=asc_df_6557121863/?tag=googleshopp00-20&linkCode=df0&hvadid=379738661937&hvpos=&hvnetw=g&hvrand=9644576217156530321&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001729&hvtargid=pla-1457801856846&psc=1",
+      "id": 35
     }
   ]
 }

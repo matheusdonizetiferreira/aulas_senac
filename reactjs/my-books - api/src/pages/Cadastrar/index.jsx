@@ -29,7 +29,7 @@ function Cadastrar (){
     }
 
     function onChange(ev){
-        const {name, value} = ev.target
+        const {name, value} = ev.target 
        // console.log({name, value})
 
 

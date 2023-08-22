@@ -1,5 +1,5 @@
 import NotFound from '../pages/NotFound'
-import Cadastrar from '../pages/Cadastrar'
+import Cadastrar from '../pages/cadastrar';
 import Administrar from '../pages/Administrar'
 import App from '../App'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
