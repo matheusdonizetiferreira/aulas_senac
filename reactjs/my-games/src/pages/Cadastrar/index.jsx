@@ -1,7 +1,7 @@
 import './style.module.css'
 import styles from './style.module.css'
 import { useState } from 'react'
-import api from '../../services/api'
+import axios from 'axios'
 import { useNavigate } from 'react-router'
 
 
@@ -20,10 +20,12 @@ function Cadastrar() {
 
     const CadastrarLivro =  (e) => {
         e.preventDefault() 
-        const url = '/data'
-        api.post(url,values)
-            .then(response  =>  console.log(response)) 
-            .catch(err => console.log(err))
+        fetch('http://localhost:3000/data',{
+            method:'POST',
+            body:JSON.stringify(values)
+        })
+        .then(response => console.log(response))
+        .catch(err => console.log(err))
     }
 
     const onChange = (e) => {
