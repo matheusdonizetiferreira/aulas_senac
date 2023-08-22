@@ -65,7 +65,7 @@ function Cadastrar() {
                     </label>
 
                     <div className={styles.wrap}>
-                        <button className={styles.button}>Cadastrar Jogo</button>
+                        <button type='submit' className={styles.button}>Cadastrar Jogo</button>
                     </div>
                 </form>
             </div>
