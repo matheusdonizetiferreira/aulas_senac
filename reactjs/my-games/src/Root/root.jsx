@@ -1,14 +1,15 @@
 import NotFound from '../pages/NotFound'
-import Cadastrar from '../pages/cadastrar';
+import Cadastrar from '../pages/Cadastrar';
 import Administrar from '../pages/Administrar'
-import App from '../App'
+import ListaGames from '../pages/Home'
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function Root() {
     return ( 
         <Router>
             <Routes>
-                <Route path="/" element={<App/>}/>
+                <Route path="/" element={<ListaGames/>}/>
                 <Route path="/cadastrar" element={<Cadastrar/>}/>
                 <Route path="/administrar" element={<Administrar/>}/>
                 <Route path="*" element={<NotFound/>}/>

@@ -1,12 +1,12 @@
 import './style.module.css'
 import styles from './style.module.css'
 import { useState } from 'react'
-import axios from 'axios'
+import api from '../../services/api'
 import { useNavigate } from 'react-router'
 
 
 const initialState = {
-    nome: '',
+    title: '',
     image: '',
     url: '',
     price: 0
@@ -20,12 +20,13 @@ function Cadastrar() {
 
     const CadastrarLivro =  (e) => {
         e.preventDefault() 
-        fetch('http://localhost:3000/data',{
-            method:'POST',
-            body:JSON.stringify(values)
+        const url = '/data'
+
+        api.post(url,values)
+        .then(() => {
+            navigate('/')
         })
-        .then(response => console.log(response))
-        .catch(err => console.log(err))
+        
     }
 
     const onChange = (e) => {
@@ -46,7 +47,7 @@ function Cadastrar() {
                 <form onSubmit={CadastrarLivro}>
                     <label htmlFor="nome">
                         Nome do Jogo:
-                        <input onChange={onChange} autoComplete='off' type="text" name="nome" />
+                        <input onChange={onChange} autoComplete='off' type="text" name="title" />
                     </label>
 
                     <label htmlFor="image">
