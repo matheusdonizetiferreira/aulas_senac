@@ -34,6 +34,28 @@
       "url": "https://www.amazon.com.br/Marvels-Spider-Man-Miles-Morales-PlayStation/dp/B08KG6NPHT/ref=asc_df_B08KG6NPHT/?tag=googleshopp00-20&linkCode=df0&hvadid=426445053297&hvpos=&hvnetw=g&hvrand=2469867332184126212&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001729&hvtargid=pla-972232847166&th=1",
       "price": " R$169,89",
       "id": 6
+    },
+    {
+      "title": "Minecraft Starter Collection - PlayStation 4",
+      "image": "https://m.media-amazon.com/images/I/61GC2cMbrQL._AC_SX679_.jpg",
+      "url": "https://www.amazon.com.br/Minecraft-Starter-Collection-PlayStation-4/dp/B09BDXVK32/ref=asc_df_B09BDXVK32/?tag=googleshopp00-20&linkCode=df0&hvadid=379738035108&hvpos=&hvnetw=g&hvrand=18067161617973022280&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001729&hvtargid=pla-1496216825004&psc=1",
+      "price": "R$229,90",
+      "id": 7
+    },
+    {
+      "title": "Resident Evil 4 - PlayStation 4 Standard Edition",
+      "image": "https://m.media-amazon.com/images/I/71CTrpj6s+L._AC_SX425_.jpg",
+      "url": "https://www.amazon.com.br/SONY-56031-Resident-Evil-4/dp/B01CR05F5K/ref=asc_df_B01CR05F5K/?tag=googleshopp00-20&linkCode=df0&hvadid=379738035108&hvpos=&hvnetw=g&hvrand=461518472028478703&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001729&hvtargid=pla-384195205638&psc=1",
+      "price": "R$129,89",
+      "id": 8
+    },
+    {
+      "title": "Jogo Ps4 Call Of Duty Black Ops 3 Zombies Chronicles Fisica",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_823366-MLB50131675704_052022-O.webp",
+      "url": "https://produto.mercadolivre.com.br/MLB-2660258503-jogo-ps4-call-of-duty-black-ops-3-zombies-chronicles-fisica-_JM?matt_tool=26352018&matt_word=&matt_source=google&matt_campaign_id=14303413853&matt_ad_group_id=135442073722&matt_match_type=&matt_network=g&matt_device=c&matt_creative=584295662867&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=453165567&matt_product_id=MLB2660258503&matt_product_partition_id=1801176656765&matt_target_id=aud-2009166904988:pla-1801176656765&gclid=EAIaIQobChMIn_uA9OjzgAMVLyjUAR12nwvrEAQYASABEgLejPD_BwE",
+      "price": "R$ 189 , 99",
+      "id": 9
     }
+
   ]
 }

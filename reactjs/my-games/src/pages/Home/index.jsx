@@ -39,7 +39,8 @@ function Home() {
                         {games.map(game => {
                               console.log(game.title)
                               return (
-                                    <ListGames key={game.id} game={game} />
+                                    <ListGames key={game.id}
+                                          game={game} />
                               )
                         })}
                   </div>

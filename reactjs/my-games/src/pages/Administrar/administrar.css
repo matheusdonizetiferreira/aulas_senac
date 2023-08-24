@@ -1,0 +1,15 @@
+h1{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.admContainer{
+    background-image: url(../../imagens/71932a46-cd3c-4cd6-a4da-43a61785bcf6.jpg);
+    width: 100vw;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
