@@ -2,17 +2,16 @@ import { useState, useEffect } from "react";
 import './home.css'
 import ListGames from "../../components/ListGames";
 import { useNavigate } from "react-router-dom";
+import api from './../../services/api'
 
 function Home() {
       const navigate = useNavigate()
       const [games, setGames] = useState([]);
 
       const getData = async () => {
-            let resp = await fetch("http://localhost:3000/data")
-            let Data = await resp.json()
-
-            setGames(Data)
-
+            const url = "/data"
+            api.get(url)
+            .then (response => setGames(response.data))
       }
 
 

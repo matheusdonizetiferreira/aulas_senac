@@ -2,18 +2,18 @@ import { useState, useEffect } from "react";
 import './administrar.css';
 import ListGamesRow from "../../components/ListGamesRow";
 import { useNavigate } from "react-router-dom";
+import api from './../../services/api'
 
 function Administrar() {
       const navigate = useNavigate()
       const [games, setGames] = useState([]);
 
       const getData = async () => {
-            let resp = await fetch("http://localhost:3000/data")
-            let Data = await resp.json()
-
-            setGames(Data)
-
+            const url = "/data"
+            api.get(url)
+            .then (response => setGames(response.data))
       }
+
 
 
       useEffect(() => {
@@ -37,7 +37,6 @@ function Administrar() {
                   </div>
                   <div className="containerGamesAdministrar">
                         {games.map(game => {
-                              console.log(game.title)
                               return (
                                     <ListGamesRow key={game.id}
                                           game={game} />

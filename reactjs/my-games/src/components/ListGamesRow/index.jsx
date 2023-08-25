@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import api from '../../services/api';
 
@@ -72,8 +72,9 @@ const ItemLink = styled.a`
 export default function ListGamesRow({ game }) {
 
     const navigate=useNavigate()
+
     const deleteGame=(id) =>{
-      const url=`/data${id}`
+      const url=`/data/${id}`
       api.delete(url)
     }
 
@@ -87,8 +88,13 @@ export default function ListGamesRow({ game }) {
           <Title>{game.title}</Title>
           <Price>{game.price}</Price>
             <div>
-                <button className='buttonEditar' onClick={() => navigate(`/editar/${game.id}`)}>Editar</button>
-                <button className='buttonExcluir' onClick={deleteGame(game.id)}>Excluir</button>
+                <Link className='buttonEditar' to={`/editar/${game.id}`}>Editar</Link>
+                <button 
+                    className='buttonExcluir' 
+                    onClick={ () => deleteGame(game.id)}
+                >
+                  Excluir
+                </button>
             </div>
 
 
