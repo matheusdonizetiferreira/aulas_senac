@@ -15,6 +15,38 @@ const ItemConteiner = styled.div`
     justify-content: space-between;
     width: 80%;
     border: 1px solid gray;
+
+    .buttons{
+      display: flex;
+      align-items: center;
+    }
+
+    .buttonEditar{
+     text-decoration: none;
+     padding: 8px;
+     margin-right: 10px;
+     color: white;
+    background-color: blue;
+    border-radius: 4px;
+    border: 1px solid black;
+      transition: .3s;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+  
+  .buttonExcluir{
+    background-color: red;
+      text-decoration: none;
+     padding: 9px;
+     margin-right: 10px;
+     color: white;
+    border-radius: 4px;
+    transition: .3s;
+    &:hover{
+      transform: scale(1.1);
+    }
+    }
     `;
 
 
@@ -44,24 +76,6 @@ const Price = styled.div`
 
  `;
 
-const Button = styled.div`
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  color: white;
-  border-color: #a5a4a4;
-  transition: border-color 0.25s;
-  
-  &:hover {
-      border-color: #626af5;
-  }
-`;
-
 const ItemLink = styled.a`
     text-decoration: none;
 
@@ -87,7 +101,7 @@ export default function ListGamesRow({ game }) {
 
           <Title>{game.title}</Title>
           <Price>{game.price}</Price>
-            <div>
+            <div className='buttons'>
                 <Link className='buttonEditar' to={`/editar/${game.id}`}>Editar</Link>
                 <button 
                     className='buttonExcluir' 
